@@ -55,20 +55,20 @@ export default function Main(props) {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
 
                 <div className='bg-white rounded-lg p-4 lg:col-span-2'>
-                    <table className='table-auto w-full'>
+                    <table className='table-auto w-full border-1 border-gray-300'>
                         <thead>
-                            <tr className="font-bold text-left border-b-2 border-gray-300">
-                                <td className="pb-2">Items</td>
-                                <td className="pb-2">Current Bid</td>
-                                <td className="pb-2">Time Left</td>
-                                <td className="pb-2">Add Now</td>
+                            <tr className="font-bold text-left border-b-1 border-gray-300">
+                                <td className="py-2 px-4">Items</td>
+                                <td className="py-2 px-4">Current Bid</td>
+                                <td className="py-2 px-4">Time Left</td>
+                                <td className="py-2 px-4">Add Now</td>
                             </tr>
                         </thead>
 
                         <tbody>
                             {auctions.map((auction) =>  (
                                 <tr key={auction.id} className="border-b-2 border-gray-300 hover:bg-gray-50">
-                                    <td className="flex items-center py-4 text-xl">
+                                    <td className="flex items-center py-4 pl-4 text-xl">
                                         <img src={auction.image} alt={auction.title} className="w-24 h-24 rounded-lg mr-4" />
                                         {auction.title}</td>
                                     <td>${auction.currentBidPrice}</td>
