@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "title": "Book on JavaScript",
+      "title": "Book on JavaScript Programming",
       "description": "A comprehensive guide to JavaScript programming.",
       "currentBidPrice": 120,
       "timeLeft": "2h 30m",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "title": "Smart Watch Series 5",
+      "title": "Smart Watch Series 5 New",
       "description": "Apple Smart Watch Series 5, slightly used, with charger.",
       "currentBidPrice": 250,
       "timeLeft": "1d 4h",
@@ -19,7 +19,7 @@
     },
     {
       "id": 3,
-      "title": "Gaming Laptop",
+      "title": "Gaming Laptop Dell XPS",
       "description": "High-performance laptop with 16GB RAM and RTX graphics card.",
       "currentBidPrice": 750,
       "timeLeft": "5h 15m",
@@ -28,8 +28,8 @@
     },
     {
       "id": 4,
-      "title": "Wooden Chair",
-      "description": "Handcrafted wooden chair, perfect for home decor.",
+      "title": "Flower Showcase Vase 3D",
+      "description": "Beautiful flower showcase, perfect for home decor.",
       "currentBidPrice": 330,
       "timeLeft": "3d 2h",
       "bidsCount": 18,
@@ -37,7 +37,7 @@
     },
     {
       "id": 5,
-      "title": "Canon DSLR Camera",
+      "title": "Canon DSLR Camera with Lens",
       "description": "Canon EOS DSLR with 18-55mm lens, great for photography beginners.",
       "currentBidPrice": 460,
       "timeLeft": "8h 45m",
@@ -46,7 +46,7 @@
     },
     {
       "id": 6,
-      "title": "Guitar Acoustic",
+      "title": "Guitar Acoustic Model 2023",
       "description": "A high-quality guitar with a beautiful finish.",
       "currentBidPrice": 95,
       "timeLeft": "12h 10m",

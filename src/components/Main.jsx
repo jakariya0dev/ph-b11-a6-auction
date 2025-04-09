@@ -47,7 +47,7 @@ export default function Main(props) {
     <main className='bg-blue-100'>
         <ToastContainer />
         <div className='w-11/12 mx-auto py-10 text-purple-900'>
-            <h1 className='text-2xl font-bold mb-2'>Active Auctions</h1>
+            <h1 className='text-2xl font-bold mb-2'>Favorite Items</h1>
             <p className='mb-8'>Discover and bid on extraordinary items</p>
 
             
@@ -61,7 +61,7 @@ export default function Main(props) {
                                 <td className="py-2 px-4">Items</td>
                                 <td className="py-2 px-4">Current Bid</td>
                                 <td className="py-2 px-4">Time Left</td>
-                                <td className="py-2 px-4">Add Now</td>
+                                <td className="py-2 px-4 text-center">Bid Now</td>
                             </tr>
                         </thead>
 
@@ -71,9 +71,9 @@ export default function Main(props) {
                                     <td className="flex items-center py-4 pl-4 text-xl">
                                         <img src={auction.image} alt={auction.title} className="w-24 h-24 rounded-lg mr-4" />
                                         {auction.title}</td>
-                                    <td>${auction.currentBidPrice}</td>
-                                    <td>{auction.timeLeft}</td>
-                                    <td className='text-center'>
+                                    <td className="pl-4 font-bold">${auction.currentBidPrice}</td>
+                                    <td className="pl-4 font-bold">{auction.timeLeft}</td>
+                                    <td className='text-center font-bold'>
                                         <button onClick={() => addFavorite(auction.id)} disabled={props.favAuctions.includes(auction.id)}>
                                             {props.favAuctions.includes(auction.id) ? <BiSolidHeart className="text-red-500 text-4xl" /> : <BiHeart className="text-gray-500 text-4xl" />}
                                         </button>
@@ -91,12 +91,12 @@ export default function Main(props) {
                     {
                         props.favAuctions.length > 0 ? props.favAuctions.map(id => (
                             <div className="flex items-center py-2 border-b-2 border-gray-300" key={id}>
-                                <img src={auctions.filter(auction => auction.id == id)[0].image} className="w-16 h-16 rounded-lg mr-4" />
+                                <img src={auctions.find(auction => auction.id == id).image} className="w-16 h-16 rounded-lg mr-4" />
                                 <div>
-                                    <p>{auctions.filter(auction => auction.id == id)[0].title}</p>
+                                    <p>{auctions.find(auction => auction.id == id).title}</p>
                                     <div className="flex items-center justify-between mt-2">
-                                        <p>${auctions.filter(auction => auction.id == id)[0].currentBidPrice}</p>
-                                        <p>Bids: {auctions.filter(auction => auction.id == id)[0].bidsCount}</p>
+                                        <p>${auctions.find(auction => auction.id == id).currentBidPrice}</p>
+                                        <p>Bids: {auctions.find(auction => auction.id == id).bidsCount}</p>
                                     </div>
                                 </div>
                                 <button className="ml-auto text-red-500" onClick={() => removeFavorite(id)}>
@@ -106,7 +106,7 @@ export default function Main(props) {
                         )) : <EmptyFav />
                     }
                     
-                    <div className="flex items-center justify-between mt-4 font-bold text-2xl">
+                    <div className="flex items-center justify-between mt-4 text-2xl font-bold">
                         <p className='mb-2'>Total bids Amount</p>
                         <p className='mb-2'>${totalAmount}</p>
                     </div>
