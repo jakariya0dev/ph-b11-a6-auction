@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "title": "Book on JavaScript",
+      "description": "A comprehensive guide to JavaScript programming.",
+      "currentBidPrice": 120,
+      "timeLeft": "2h 30m",
+      "bidsCount": 5,
+      "image": "https://i.ibb.co.com/3mQbb3Bz/Bid6-min.png"
+    },
+    {
+      "id": 2,
+      "title": "Smart Watch Series 5",
+      "description": "Apple Smart Watch Series 5, slightly used, with charger.",
+      "currentBidPrice": 250,
+      "timeLeft": "1d 4h",
+      "bidsCount": 12,
+      "image": "https://i.ibb.co.com/Z1WMVs3H/Bid4-min.png"
+    },
+    {
+      "id": 3,
+      "title": "Gaming Laptop",
+      "description": "High-performance laptop with 16GB RAM and RTX graphics card.",
+      "currentBidPrice": 750,
+      "timeLeft": "5h 15m",
+      "bidsCount": 22,
+      "image": "https://i.ibb.co.com/rGprqHtQ/Bid3-min.png"
+    },
+    {
+      "id": 4,
+      "title": "Wooden Chair",
+      "description": "Handcrafted wooden chair, perfect for home decor.",
+      "currentBidPrice": 330,
+      "timeLeft": "3d 2h",
+      "bidsCount": 18,
+      "image": "https://i.ibb.co.com/B5g98hbn/Bid7-min.png"
+    },
+    {
+      "id": 5,
+      "title": "Canon DSLR Camera",
+      "description": "Canon EOS DSLR with 18-55mm lens, great for photography beginners.",
+      "currentBidPrice": 460,
+      "timeLeft": "8h 45m",
+      "bidsCount": 9,
+      "image": "https://i.ibb.co.com/GQFsdNqD/Bid1-min.png"
+    },
+    {
+      "id": 6,
+      "title": "Guitar Acoustic",
+      "description": "A high-quality guitar with a beautiful finish.",
+      "currentBidPrice": 95,
+      "timeLeft": "12h 10m",
+      "bidsCount": 14,
+      "image": "https://i.ibb.co.com/ym8PxFhB/Bid2-min.png"
+    }
+  ]
+  
+
