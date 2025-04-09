@@ -24,14 +24,22 @@ export default function Main(props) {
 
         props.setFabAuctions([...props.favAuctions, id])
         console.log(props.favAuctions)
-        toast("Item successfully added!");
+        toast.success('Item successfully added!!', {
+            position: "top-right",
+            autoClose: 5000,
+            theme: "colored",
+            });
 
     }
     const removeFavorite = (id) => {
         console.log(id);
         let newFavAuctions = props.favAuctions.filter(favId => favId !== id);
         props.setFabAuctions(newFavAuctions);
-        toast("Item successfully removed!");
+        toast.success('Item successfully removed!!', {
+            position: "top-right",
+            autoClose: 5000,
+            theme: "colored",
+            });
     }
 
   return (
