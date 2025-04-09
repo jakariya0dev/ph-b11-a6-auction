@@ -3,6 +3,7 @@ import { BiHeart } from "react-icons/bi";
 import { BiSolidHeart } from "react-icons/bi";
 import { BiX } from "react-icons/bi";
 import { ToastContainer, toast } from 'react-toastify';
+import EmptyFav from "./EmptyFav";
 
 export default function Main(props) {
 
@@ -83,7 +84,7 @@ export default function Main(props) {
 
                     </table>
                 </div>
-
+                
                 <div className='bg-white rounded-lg p-4'>
                     <h2 className='text-2xl font-bold mb-2 pb-4 text-center border-b-2 border-gray-300'>Upcoming Auctions</h2>
 
@@ -102,12 +103,7 @@ export default function Main(props) {
                                     <BiX className="text-2xl" />
                                 </button>
                             </div>
-                        )) : (
-                            <div className='text-center py-10 px-20 border-b-2 border-gray-300'>
-                                <p className='text-gray-500 text-4xl text-center mb-4'>No favorites yet</p>
-                                <p className="text-gray-500 text-center">Click the heart icon on any item to add it to your favorites</p>
-                            </div>
-                        )
+                        )) : <EmptyFav />
                     }
                     
                     <div className="flex items-center justify-between mt-4 font-bold text-2xl">
