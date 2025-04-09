@@ -5,7 +5,7 @@ import Hero from './components/Hero'
 import Main from './components/Main'
 import Navbar from './components/Navbar'
 // import { fetchActiveAuctions } from './utils/Functions'
-import React, { useEffect, useState, Suspense } from 'react'
+import React, {useState, Suspense } from 'react'
 
 const auctions = fetch('/bids.json').then(res => res.json());
 
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar favAuctions={favAuctions} />
       <Hero />
       <Suspense fallback={<div>Loading...</div>}>
         <Main auctions={auctions} setFabAuctions={setFabAuctions} favAuctions={favAuctions}/>
