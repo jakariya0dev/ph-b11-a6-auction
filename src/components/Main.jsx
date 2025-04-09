@@ -2,7 +2,7 @@ import { Suspense, use, useEffect, useState } from "react"
 import { BiHeart } from "react-icons/bi";
 import { BiSolidHeart } from "react-icons/bi";
 import { BiX } from "react-icons/bi";
-
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function Main(props) {
 
@@ -24,16 +24,19 @@ export default function Main(props) {
 
         props.setFabAuctions([...props.favAuctions, id])
         console.log(props.favAuctions)
+        toast("Item successfully added!");
 
     }
     const removeFavorite = (id) => {
         console.log(id);
         let newFavAuctions = props.favAuctions.filter(favId => favId !== id);
         props.setFabAuctions(newFavAuctions);
+        toast("Item successfully removed!");
     }
 
   return (
     <main className='bg-blue-100'>
+        <ToastContainer />
         <div className='w-11/12 mx-auto py-10 text-purple-900'>
             <h1 className='text-2xl font-bold mb-2'>Active Auctions</h1>
             <p className='mb-8'>Discover and bid on extraordinary items</p>
